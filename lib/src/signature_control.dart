@@ -56,7 +56,7 @@ class OffsetPoint extends Offset {
   }
 
   @override
-  int get hashCode => hashValues(super.hashCode, timestamp);
+  int get hashCode => Object.hash(super.hashCode, timestamp);
 }
 
 class CubicLine extends Offset {
